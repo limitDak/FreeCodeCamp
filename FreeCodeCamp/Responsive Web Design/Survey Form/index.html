@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "styles/default.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <main class = "container">
+    <header>
+        <h1 id = "title" >Manga Survey Form</h1>
+        <p id = "description" >Thank you for participating in this survey!</p>
+    </header>
+
+    <form id = "survey-form">
+        <!--Name-->
+        <div class = "form-group">
+            <label id = "name-label" for = "name">Name</label>
+            <input 
+            type = "text" 
+            name = "name" 
+            id = "name" 
+            class = "form-control" 
+            placeholder = "John Smith" 
+            required/>
+        </div>
+        <!--Email-->
+        <div class = "form-group">
+            <label id = "email-label" for = "email">Email</label>
+            <input
+            type = "email"
+            name = "email"
+            id = "email"
+            class = "form-control"
+            placeholder = "yourEmail@gmail.com"
+            required/>
+        </div>
+        <!--# of series read-->
+        <div class = "form-group">
+            <label id = "number-label" for = "number">How many series have you read?</label>
+            <input 
+            type = "number"
+            name = "number"
+            id = "number"
+            class = "form-control"
+            placeholder = "0"
+            min = 0
+            max = 10000
+            required/>
+        </div>
+        <!--Big Three Question-->
+        <div class = "form-group">
+            <label id = "dropdown-label" for = "dropdown">Which is your favorite of the Big Three?</label>
+            <select
+            id = "dropdown"
+            name = "big-three"
+            class = "form-control"
+            required>
+                <option disabled selected value>Select one of the following three options</option>
+                <option value = "bleach">Bleach</option>
+                <option value = "naruto">Naruto</option>
+                <option value = "one-piece">One Piece</option>
+            </select>
+        </div>
+        <!--Movie Adaptation Question-->
+        <div class = "form-group">
+            <p>Do you like the idea of adapting more anime arcs to movies like Demon Slayer: Mugen Train?</p>
+            <label>
+                <input 
+                type = "radio"
+                value = "yes"
+                name = "movie-adaptation"
+                class = "input-radio"
+                checked/>
+                Yes
+            </label>
+            <label>
+                <input 
+                type="radio" 
+                value="no" 
+                name="movie-adaptation" 
+                class="input-radio"/>
+                No
+            </label>
+        </div>
+        <!--Types of manga question-->
+        <div class = "form-group">
+            <p>What type of manga do you enjoy?
+                <span class = "clue">(Check all that apply)</span>
+            </p>
+            <label>
+                <input
+                name = "manga-type"
+                value = "shonen"
+                type = "checkbox"
+                class = "input-checkbox"
+                />Shonen (Naruto, One Piece, Dragon Ball)
+            </label>
+            <label>
+                <input 
+                name="manga-type" 
+                value="shoujo" 
+                type="checkbox" 
+                class="input-checkbox" />Shoujo (Fruits Basket, Sailor Moon, Skip Beat)
+            </label>
+            <label>
+                <input 
+                name="manga-type" 
+                value="seinen" 
+                type="checkbox" 
+                class="input-checkbox" />Seinen (Akira, Berserk, Vagabond)
+            </label>
+            <label>
+                <input 
+                name="manga-type" 
+                value="josei" 
+                type="checkbox" 
+                class="input-checkbox" />Josei (Loveless, Paradise Kiss, Midnight Secretary)
+            </label>
+            <label>
+                <input 
+                name="manga-type" 
+                value="kodomomuke" 
+                type="checkbox" 
+                class="input-checkbox" />Kodomomuke (Pokemon, Chi's Sweet Home)
+            </label>
+        </div>
+        <!--Additional Comments-->
+        <div class = "form-group">
+            <p>Any comments or suggestions for the next survey?</p>
+            <textarea
+            id = "comments"
+            class = "input-textarea"
+            name = "comment"
+            placeholder = "Enter your comments here..."></textarea>
+        </div>
+        <!--Submit Button-->
+        <div class = "form-group">
+            <button
+            type = "submit"
+            id = "submit"
+            class = "submit-button">Submit
+        </button>
+        </div>
+    </form>
+    </main>
+</body>
+</html>
