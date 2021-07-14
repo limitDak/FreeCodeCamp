@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/default.css">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <main id = "container">
+        <header id = "header">
+            <div class = "logo">
+                <img id = "header-img" src = "https://cdn2.bulbagarden.net/upload/9/9b/Rain_Badge.png" alt = "Company Logo">
+                <h1>Sootopolis Gym</h1>
+            </div>
+            
+            <nav id = "nav-bar">
+                <ul>
+                    <li><a class = "nav-link" href = "#water-type">What Type Are We?</a></li>
+                    <li><a class="nav-link" href="#gym-leader">Gym Leader</a></li>
+                    <li><a class="nav-link" href="#team">Current Team</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Video Section-->
+        <section class = "section-space">
+            <h2 class = "text-center">Check out our most recent gym challenge!</h2>
+            <iframe 
+            id="video" 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/wNbzF6nsLWc" 
+            title="pChal Daily: Emerald Kaizo Wallace Has me Checkmated"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+            </iframe>
+        </section>
+        
+        <!--Section on water types-->
+        <section id = "water-type" class = "section-space">
+            <h2 class = "text-center">The Famous Water Type</h2>
+            <p class = "text-center">The Sootopolis Gym specializes in the most abundant Pokemon type on the planet, Water! Water-types are majestic, flowing beings
+                that can be found on any region in a vast array of shapes, colors, and personalities. They are capable, strong Pokemon with the power
+                to douse raging fires and bring life to deserted wastelands. It is no coincidence that water-types are a staple for any serious trainer's team!
+            </p>
+        </section>
+
+        <!--Section on Gym Leaders-->
+        <section id = "gym-leader" class = "section-space">
+            <h2 class="text-center">The Leader and Leader's Master</h2>
+            <p class = "text-center">The Sootopolis Gym is currently holding a special challenge for contestants of the Pokemon League. With permission from the League, a
+                trainer now must defeat Wallace and his former master Juan in order to receive the Sootopolis City Badge, aka the Rain Badge. Both Leaders are frighteningly
+                strong, both bringing forth powerful water-type teams of their own. They without a doubt represent the best of the best when it comes to water-type trainers region-wide.
+            </p>
+        </section>
+
+        <!--Section on Gym Teams-->
+        <section id = "team" class = "section-space">
+            <h2 class = "text-center">Single AND Double Battles?</h2>
+            <p class = "text-center"> The Sootopolis Gym Battles occur with one single battle against Wallace followed by a Double Battle consisting
+                of both Wallace and Juan. Below are the teams for each battle. 
+                <span class = "clue">(Some information is incorrect, the image of the Pokemon provided is the correct Pokemon for the team.)</span>
+            </p>
+            <h3>Single Battle Team</h3>
+            <img id="single-battle" src="https://i.imgur.com/iVxAX2T.png"
+                alt="Single battle team consisting of Kingdra level 76, Castform level 76, Ludicolo level 76, Swampert level 77, Lapras level 76, and Milotic level 77">
+            <h3>Double Battle Team</h3>
+            <p class = "clue">(Vaporeon is Level 77)</p>
+            <img id="double-battle" src="https://i.imgur.com/YLjytLn.png"
+                alt="Double battle team consisting of Kingdra level 77, Lapras level 77, Castform level 77, Lanturn level 77, Ludicolo level 76, and Vaporeon level 77">
+        </section>
+
+        <section id = "form-section" class = "section-space">
+            <h2 class = "text-center">Questions? Concerns? Shoot us an email!</h2>
+            <form id = "form" action="https://www.freecodecamp.com/email-submit">
+                <label for="email">Email</label>
+                <input
+                name = "email"
+                id = "email"
+                type = "email"
+                placeholder = "Enter your email here"
+                required>
+                <label for="message">Message</label>
+                <textarea 
+                name="message" 
+                id="message" 
+                type="text" 
+                placeholder="Enter your text here" 
+                required></textarea>
+                <input
+                type = "submit"
+                id = "submit"
+                value = "Submit"
+                class = "btn"
+                >
+            </form>
+        </section>
+
+        <!--Footer-->
+        <footer>
+            <span>Copyright 2021, Hoenn Pokemon League</span>
+        </footer>
+    </main>
+</body>
+</html>
